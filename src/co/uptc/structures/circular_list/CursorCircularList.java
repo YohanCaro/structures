@@ -6,7 +6,7 @@ public class CursorCircularList<T> extends CircularList<T> {
 
     public CursorCircularList(CircularList<T> list) {
         super(list);
-        this.cursor = this.cursor;
+        this.cursor = list.nodeAccess;
     }
     
     public boolean isOut() {
